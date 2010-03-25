@@ -1,0 +1,10 @@
+admin:
+  name: John Smith
+  email: john.smith@unknown.com
+
+domain: unknown.com
+
+search_engines:
+  - google.com
+  - yahoo.com
+  - bing.com
