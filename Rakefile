@@ -6,6 +6,7 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "appconfig"
+    gem.version = AppConfig::VERSION::STRING
     gem.summary = %Q{Provides an OpenStruct/Hash-like syntax for accessing your app's configuration options, loaded from a YAML file.}
     gem.description = %Q{Provides an OpenStruct/Hash-like syntax for accessing your app's configuration options, loaded from a YAML file. Supports multiple configuration files, nested configuration groups and fallback options.}
     gem.email = "tihomir.georgiev@gmail.com"
