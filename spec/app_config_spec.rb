@@ -3,10 +3,8 @@ require 'spec_helper'
 describe AppConfig do
   before(:all) do
     silence_warnings do
-      module AppConfig
-        CONFIG_PATH = Pathname.new(File.join(File.dirname(__FILE__), 'fixtures'))
-        DEFAULT_CONFIG_PATH = CONFIG_PATH.join('appconfig.defaults.yml')
-      end
+      AppConfig.config_files_path = Pathname.new(File.join(File.dirname(__FILE__), 'fixtures'))
+      AppConfig.default_config_file_path = AppConfig.config_files_path.join('appconfig.defaults.yml')
     end
   end
   
@@ -32,7 +30,7 @@ describe AppConfig do
     AppConfig.domain.should == 'stillunknown.com'
   end
   
-  context 'when accessing first-level congig keys' do
+  context 'when accessing first-level config keys' do
     it 'should allow struct-like access to config keys' do
       AppConfig.search_engines.should == %w{google.com yahoo.com bing.com}
     end

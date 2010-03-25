@@ -11,15 +11,29 @@ AppConfig
 	             \ \_\   \ \_\                                     /\____/
 	              \/_/    \/_/                                     \_/__/
 
-AppConfig does pretty much what [all](http://github.com/cjbottaro/app_config) [the](http://github.com/stephencelis/app) [other](http://github.com/merbjedi/app_config) [great](http://github.com/oshuma/app_config) application configuration do, but requires even less configuration. It reads your config from YAML files, supports nested options, and automatically reloads your changes in `development` mode. It also has a README with ASCII art in it.
+*AppConfig* does pretty much what [all](http://github.com/cjbottaro/app_config) [the](http://github.com/stephencelis/app) [other](http://github.com/merbjedi/app_config) [great](http://github.com/oshuma/app_config) application configuration plugins do, but requires even less configuration (I know, how meta). It reads your config from YAML files, supports nested options, and automatically reloads your changes in `development` mode. 
+
+It also has a README with ASCII art in it.
 
 Install
 =======
 
-First, install the `appconfig` gem. It's *Rails 3* ready, but it will also run fine in *Rails 2.3+*.
+Rails 2.x
+-------
 
-	gem install appconfig
+Put this in your `environment.rb`:
+
+	config.gem 'appconfig'
 	
+That's it.
+
+Rails 3
+-------
+
+Add this to your `Gemfile`:
+
+	gem 'appconfig', :require => 'app_config'
+
 That's it.
 
 Usage
@@ -74,4 +88,4 @@ By all means, drop us a line. Or better yet, fork the project, fix the bug and s
 License
 =======
 
-Copyright (c) 2010 Josh Krall & Tisho Georgiev, released under the MIT license
+Copyright (c) 2010 Joshua Krall & Tisho Georgiev, released under the MIT license

@@ -1,4 +1,5 @@
 require 'active_support'
+require 'active_support/core_ext/hash'
 
 module AppConfig
   # Support nested hash accessors, so you could do AppConfig.stylesheet_expansions.standard
