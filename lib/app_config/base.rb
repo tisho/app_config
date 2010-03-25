@@ -1,5 +1,8 @@
+require 'yaml'
+require 'erb'
+
 module AppConfig
-  CONFIG_PATH = Rails.root.join('config')
+  CONFIG_PATH = defined?(Rails) ? Rails.root.join('config') : Pathname.new(File.dirname(__FILE__))
   DEFAULT_CONFIG_PATH = CONFIG_PATH.join('appconfig.defaults.yml')
   
   class << self

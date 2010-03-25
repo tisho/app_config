@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'rake'
+require File.dirname(__FILE__) + "/lib/app_config/version.rb"
 
 begin
   require 'jeweler'
@@ -11,6 +12,7 @@ begin
     gem.homepage = "http://github.com/tisho/appconfig"
     gem.authors = ["Tisho Georgiev", "Joshua Krall"]
     gem.add_development_dependency "rspec", ">= 1.2.9"
+    gem.add_development_dependency "rails", ">= 2.3"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new

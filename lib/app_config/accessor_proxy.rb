@@ -1,3 +1,5 @@
+require 'active_support'
+
 module AppConfig
   # Support nested hash accessors, so you could do AppConfig.stylesheet_expansions.standard
   class AccessorProxy < HashWithIndifferentAccess
