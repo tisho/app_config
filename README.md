@@ -1,6 +1,7 @@
 AppConfig
 =========
 
+
 	 ______                  ____                     ___                 
 	/\  _  \                /\  _`\                 /'___\ __             
 	\ \ \L\ \  _____   _____\ \ \/\_\   ___    ___ /\ \__//\_\     __     
@@ -11,9 +12,10 @@ AppConfig
 	             \ \_\   \ \_\                                     /\____/
 	              \/_/    \/_/                                     \_/__/
 
+
 *AppConfig* does pretty much what [all](http://github.com/cjbottaro/app_config) [the](http://github.com/stephencelis/app) [other](http://github.com/merbjedi/app_config) [great](http://github.com/oshuma/app_config) application configuration plugins do, but requires even less configuration (I know, how meta). It reads your config from YAML files, supports nested options, and automatically reloads your changes in `development` mode. 
 
-It also has a README with ASCII art in it.
+It also has a README with cool ASCII art in it.
 
 Install
 =======
