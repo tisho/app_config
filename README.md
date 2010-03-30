@@ -87,6 +87,11 @@ Found a bug?
 
 By all means, drop us a line. Or better yet, fork the project, fix the bug and send us a pull request. We'll thank you for it.
 
+Credits
+=======
+
+AppConfig was extracted with little modification from the loving embrace of the [TransFS](http://transfs.com) codebase, which to this day helps businesses quickly and easily compare the best credit card processors. For more open-source love from [TFS](htp://transfs.com), please take a look at [Stylist](http://github.com/tisho/stylist) and [FunnelCake](http://github.com/jkrall/funnel_cake).
+
 License
 =======
 
