@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{appconfig}
-  s.version = "0.1.0"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Tisho Georgiev", "Joshua Krall"]
-  s.date = %q{2010-03-25}
+  s.date = %q{2010-10-25}
   s.description = %q{Provides an OpenStruct/Hash-like syntax for accessing your app's configuration options, loaded from a YAML file. Supports multiple configuration files, nested configuration groups and fallback options.}
   s.email = %q{tihomir.georgiev@gmail.com}
   s.extra_rdoc_files = [
@@ -39,7 +39,7 @@ Gem::Specification.new do |s|
   s.homepage = %q{http://github.com/tisho/appconfig}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.6}
+  s.rubygems_version = %q{1.3.7}
   s.summary = %q{Provides an OpenStruct/Hash-like syntax for accessing your app's configuration options, loaded from a YAML file.}
   s.test_files = [
     "spec/app_config_spec.rb",
@@ -50,7 +50,7 @@ Gem::Specification.new do |s|
     current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
     s.specification_version = 3
 
-    if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
+    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_development_dependency(%q<rspec>, [">= 1.2.9"])
       s.add_development_dependency(%q<rails>, [">= 2.3"])
     else
